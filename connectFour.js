@@ -11,6 +11,7 @@
     10x10 board instead of standard 7x6
     The four winning chips now have a golden outline around them, easier to distinguish the winner quicker
     Spacebar can now be used to reset the board at any time
+
 */
 
 let canvas = document.querySelector("#myCanvas");
@@ -505,7 +506,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 1 && boardArray[i+1][j] == 1 && boardArray[i+2][j] == 1 && boardArray[i+3][j] == 1){
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -517,7 +518,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i+1)), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -529,7 +530,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i+2)), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -541,7 +542,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i+3)), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -560,7 +561,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 1 && boardArray[i][j+1] == 1 && boardArray[i][j+2] == 1 && boardArray[i][j+3] == 1){
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
               context.fill();
@@ -572,7 +573,7 @@ function chipOutlineWinner(){
               context.fill();
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*(j+1)), 42, 0, 2 * Math.PI);
               context.fill();
@@ -584,7 +585,7 @@ function chipOutlineWinner(){
               context.fill();
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*(j+2)), 42, 0, 2 * Math.PI);
               context.fill();
@@ -596,7 +597,7 @@ function chipOutlineWinner(){
               context.fill();
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*(j+3)), 42, 0, 2 * Math.PI);
               context.fill();
@@ -615,7 +616,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 1 && boardArray[i-1][j+1] == 1 && boardArray[i-2][j+2] == 1 && boardArray[i-3][j+3] == 1){
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -627,7 +628,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-1)), (50+85*(j+1)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -639,7 +640,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-2)), (50+85*(j+2)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -651,7 +652,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-3)), (50+85*(j+3)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -670,7 +671,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 1 && boardArray[i-1][j-1] == 1 && boardArray[i-2][j-2] == 1 && boardArray[i-3][j-3] == 1){
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -682,7 +683,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-1)), (50+85*(j-1)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -694,7 +695,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-2)), (50+85*(j-2)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -706,7 +707,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-3)), (50+85*(j-3)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -727,7 +728,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 2 && boardArray[i+1][j] == 2 && boardArray[i+2][j] == 2 && boardArray[i+3][j] == 2){
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -739,7 +740,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i+1)), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -751,7 +752,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i+2)), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -763,7 +764,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i+3)), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -782,7 +783,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 2 && boardArray[i][j+1] == 2 && boardArray[i][j+2] == 2 && boardArray[i][j+3] == 2){
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
               context.fill();
@@ -794,7 +795,7 @@ function chipOutlineWinner(){
               context.fill();
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*(j+1)), 42, 0, 2 * Math.PI);
               context.fill();
@@ -806,7 +807,7 @@ function chipOutlineWinner(){
               context.fill();
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*(j+2)), 42, 0, 2 * Math.PI);
               context.fill();
@@ -818,7 +819,7 @@ function chipOutlineWinner(){
               context.fill();
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*(j+3)), 42, 0, 2 * Math.PI);
               context.fill();
@@ -837,7 +838,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 2 && boardArray[i-1][j+1] == 2 && boardArray[i-2][j+2] == 2 && boardArray[i-3][j+3] == 2){
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -849,7 +850,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-1)), (50+85*(j+1)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -861,7 +862,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-2)), (50+85*(j+2)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -873,7 +874,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-3)), (50+85*(j+3)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -892,7 +893,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 2 && boardArray[i-1][j-1] == 2 && boardArray[i-2][j-2] == 2 && boardArray[i-3][j-3] == 2){
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -904,7 +905,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-1)), (50+85*(j-1)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -916,7 +917,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-2)), (50+85*(j-2)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -928,7 +929,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-3)), (50+85*(j-3)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -949,7 +950,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 3 && boardArray[i+1][j] == 3 && boardArray[i+2][j] == 3 && boardArray[i+3][j] == 3){
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -961,7 +962,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i+1)), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -973,7 +974,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i+2)), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -985,7 +986,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i+3)), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -1004,7 +1005,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 3 && boardArray[i][j+1] == 3 && boardArray[i][j+2] == 3 && boardArray[i][j+3] == 3){
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
               context.fill();
@@ -1016,7 +1017,7 @@ function chipOutlineWinner(){
               context.fill();
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*(j+1)), 42, 0, 2 * Math.PI);
               context.fill();
@@ -1028,7 +1029,7 @@ function chipOutlineWinner(){
               context.fill();
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*(j+2)), 42, 0, 2 * Math.PI);
               context.fill();
@@ -1040,7 +1041,7 @@ function chipOutlineWinner(){
               context.fill();
               //Draws winning outline
               context.beginPath();
-              context.fillStyle = '#ff8c00';
+              context.fillStyle = '#ffc800';
               context.style = '3px';
               context.arc((50+85*i), (50+85*(j+3)), 42, 0, 2 * Math.PI);
               context.fill();
@@ -1059,7 +1060,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 3 && boardArray[i-1][j+1] == 3 && boardArray[i-2][j+2] == 3 && boardArray[i-3][j+3] == 3){
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -1071,7 +1072,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-1)), (50+85*(j+1)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -1083,7 +1084,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-2)), (50+85*(j+2)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -1095,7 +1096,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-3)), (50+85*(j+3)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -1114,7 +1115,7 @@ function chipOutlineWinner(){
           if(boardArray[i][j] == 3 && boardArray[i-1][j-1] == 3 && boardArray[i-2][j-2] == 3 && boardArray[i-3][j-3] == 3){
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*i), (50+85*j), 42, 0, 2 * Math.PI);
             context.fill();
@@ -1126,7 +1127,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-1)), (50+85*(j-1)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -1138,7 +1139,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-2)), (50+85*(j-2)), 42, 0, 2 * Math.PI);
             context.fill();
@@ -1150,7 +1151,7 @@ function chipOutlineWinner(){
             context.fill();
             //Draws winning outline
             context.beginPath();
-            context.fillStyle = '#ff8c00';
+            context.fillStyle = '#ffc800';
             context.style = '3px';
             context.arc((50+85*(i-3)), (50+85*(j-3)), 42, 0, 2 * Math.PI);
             context.fill();
